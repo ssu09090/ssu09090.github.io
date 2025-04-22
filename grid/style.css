@@ -7,9 +7,24 @@ body {
   font-style: normal;
 }
 
-section#box1,
-section#box2 {
-  display: none;
+
+main > div > i {
+  color: #aaa;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-size: 2rem;
+  z-index: 10;
+  animation: icon_move 0.5s infinite alternate;
+}
+@keyframes icon_move{
+ 0%{
+  color: white;
+  transform: scale(1);
+ }
+ 100%{
+  transform: scale(1.5);
+ }
 }
 
 /* main */
@@ -17,11 +32,16 @@ main {
   height: 100%;
   color: white;
   background-color: #333;
+  position: relative;
 }
 main > section {
   width: 100%;
   height: 100%;
   display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
 }
 main > section > p {
   display: flex;
