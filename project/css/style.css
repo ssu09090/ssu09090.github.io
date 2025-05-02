@@ -1,0 +1,686 @@
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #17142f;
+  color: #efcf8c;
+}
+
+header {
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  gap: 5rem;
+}
+header .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 750px;
+  width: 100%;
+  background-image: url(../images/bg.png);
+  z-index: -20;
+}
+header .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 750px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -10;
+}
+header h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 3rem 7rem;
+  z-index: 10;
+}
+header h1 a {
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  background-color: #fdf8f1;
+  border-radius: 50%;
+  position: relative;
+}
+header h1 a img {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+}
+header nav ul {
+  font-family: "S-CoreDream-3Light", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 2rem;
+  margin: 4rem 7rem;
+}
+header nav ul.top {
+  font-size: 1rem;
+  color: #f5c1c9;
+}
+header nav ul.main {
+  margin-top: 5rem;
+  gap: 8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+header .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+header .center .ment {
+  text-align: right;
+  line-height: 3rem;
+  color: #fdf8f1;
+}
+header .center .ment h2 {
+  font-size: 3rem;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  line-height: 4rem;
+}
+header .center .ment h2 span {
+  color: #efcf8c;
+}
+header .center .ment p {
+  margin-top: 2rem;
+  font-size: 24px;
+  font-family: "S-CoreDream-3Light", sans-serif;
+}
+header .center .pic {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-image: url(../images/fleamarket.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .bottom {
+  padding: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .bottom h2 {
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 36px;
+}
+
+main {
+  margin: 8rem 0 5rem 0;
+}
+main .scroll-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  padding: 10px 15px;
+  background-color: #fdf8f1;
+  color: #5a4b7f;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+main .scroll-top-btn:hover {
+  background: #f7e2c4;
+}
+main section#banner {
+  position: relative;
+}
+main section#banner .title-box {
+  position: absolute;
+  left: 5rem;
+}
+main section#banner .title-box .banner-title {
+  width: 500px;
+  height: 70px;
+  background-color: #efcf8c;
+  border-radius: 10px;
+  margin-left: 10rem;
+}
+main section#banner .title-box .banner-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 36px;
+}
+main section#banner .content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+main section#banner .content .list {
+  margin: 13rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+main section#banner .content .list h3 {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #f5c1c9;
+  color: #5a4b7f;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+main section#banner .content .list .img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+main section#banner .content .list ul li {
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  color: #fdf8f1;
+}
+main section#banner .content .list2 {
+  margin: 18rem 3rem 6rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+main section#banner .content .list2 h3 {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #f5c1c9;
+  color: #5a4b7f;
+  font-size: 1.5rem;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+main section#banner .content .list2 .img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+main section#banner .content .list2 ul li {
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  color: #fdf8f1;
+}
+main #card .title {
+  width: 600px;
+  height: 70px;
+  background-color: #efcf8c;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem auto;
+}
+main #card .title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 36px;
+}
+main #card .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem auto;
+  gap: 5rem;
+  color: #fdf8f1;
+}
+main #card .info .guide {
+  width: 600px;
+  height: 100%;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  font-size: 20px;
+  border: 1px dashed #f5c1c9;
+  border-radius: 10px;
+}
+main #card .info .guide ul {
+  margin: 2rem;
+}
+main #card .info .guide ul li {
+  line-height: 2.2rem;
+}
+main #card .info .guide ul .txt {
+  margin-left: 2rem;
+  line-height: 2.2rem;
+}
+main #card .info .map {
+  border: 1px dashed #f5c1c9;
+  border-radius: 10px;
+  padding: 1.9rem;
+}
+main #support .title-box {
+  margin-top: 15rem;
+  margin-left: 10rem;
+}
+main #support .title-box .support-title {
+  width: 500px;
+  height: 70px;
+  background-color: #efcf8c;
+  border-radius: 10px;
+  margin-left: 4rem;
+}
+main #support .title-box .support-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 36px;
+}
+main #support .list {
+  margin: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+main #support .list div {
+  position: relative;
+  border: 1px dashed #f5c1c9;
+}
+main #support .list div h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -50px;
+  left: 25px;
+  width: 250px;
+  height: 90px;
+  padding: 12px 10px 7px 10px;
+  border-radius: 20px;
+  background-color: #f5c1c9;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 26px;
+}
+main #support .list div ul {
+  width: 300px;
+  height: 200px;
+  padding-top: 40px;
+}
+main #support .list div ul li {
+  margin: 2rem;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fdf8f1;
+}
+main #support .list div ul li a {
+  font-family: "S-CoreDream-3Light", sans-serif;
+  font-size: 12px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #efcf8c;
+  color: #5a4b7f;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+main #support .list div ul li a:hover {
+  background-color: #e9bc5f;
+}
+
+footer .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+footer .card .notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border: 1px dashed #efcf8c;
+  color: #fdf8f1;
+  gap: 1rem;
+  position: relative;
+}
+footer .card .notice h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  width: 250px;
+  height: 50px;
+  padding: 12px 10px 7px 10px;
+  border-radius: 20px;
+  background-color: #efcf8c;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 26px;
+}
+footer .card .notice ul {
+  font-family: "S-CoreDream-3Light", sans-serif;
+}
+footer .card .notice ul li {
+  margin: 7px;
+  border-bottom: 1px dashed #efcf8c;
+}
+footer .card .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  border: 1px dashed #efcf8c;
+  color: #fdf8f1;
+  position: relative;
+}
+footer .card .sns h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  width: 250px;
+  height: 50px;
+  padding: 12px 10px 7px 10px;
+  border-radius: 20px;
+  background-color: #efcf8c;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 26px;
+}
+footer .card .sns .first {
+  margin-top: 15px;
+  font-family: "S-CoreDream-3Light", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+footer .card .sns .first a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .card .sns .first a img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+footer .card .sns .secon {
+  font-family: "S-CoreDream-3Light", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+footer .card .sns ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+footer .card .sns ul li img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #efcf8c;
+}
+footer .card .sns ul li:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+footer .card .help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 1px dashed #efcf8c;
+  color: #fdf8f1;
+  gap: 1rem;
+  position: relative;
+}
+footer .card .help h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  width: 250px;
+  height: 50px;
+  padding: 12px 10px 7px 10px;
+  border-radius: 20px;
+  background-color: #efcf8c;
+  color: #5a4b7f;
+  font-family: "GangwonEdu_OTFBoldA", sans-serif;
+  font-size: 26px;
+}
+footer .card .help ul li {
+  font-family: "S-CoreDream-3Light", sans-serif;
+  margin: 5px;
+}
+footer .copy {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fdf8f1;
+}/*# sourceMappingURL=style.css.map */

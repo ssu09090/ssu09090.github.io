@@ -1,0 +1,556 @@
+@charset "utf-8";
+
+$bg-color: #17142f;
+$main-color: #efcf8c;
+$point-color: #f5c1c9;
+$main-font: #5a4b7f;
+$sub-font: #fdf8f1;
+$font-large: 36px;
+$font-medium: 24px;
+$font-small: 14px;
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+$font-main: "GangwonEdu_OTFBoldA", sans-serif;
+
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+$font-sub: "S-CoreDream-3Light", sans-serif;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $bg-color;
+  color: $main-color;
+}
+
+header {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  gap: 5rem;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 750px;
+    width: 100%;
+    background-image: url(../images/bg.png);
+    z-index: -20;
+  }
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 750px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: -10;
+  }
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 3rem 7rem;
+    z-index: 10;
+    a {
+      cursor: pointer;
+      height: 150px;
+      width: 150px;
+      background-color: $sub-font;
+      border-radius: 50%;
+      position: relative;
+      img {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-50% -50%);
+      }
+    }
+  }
+  nav {
+    ul {
+      font-family: $font-sub;
+      display: flex;
+      justify-content: flex-end;
+      gap: 2rem;
+      margin: 4rem 7rem;
+      &.top {
+        font-size: 1rem;
+        color: $point-color;
+      }
+      &.main {
+        margin-top: 5rem;
+        gap: 8rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    .ment {
+      text-align: right;
+      line-height: 3rem;
+      color: $sub-font;
+      h2 {
+        font-size: 3rem;
+        font-family: $font-main;
+        line-height: 4rem;
+        span {
+          color: $main-color;
+        }
+      }
+      p {
+        margin-top: 2rem;
+        font-size: $font-medium;
+        font-family: $font-sub;
+      }
+    }
+    .pic {
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+      background-image: url(../images/fleamarket.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .bottom {
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-family: $font-main;
+      font-size: $font-large;
+    }
+  }
+}
+main {
+  margin: 8rem 0 5rem 0;
+  .scroll-top-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    padding: 10px 15px;
+    background-color: $sub-font;
+    color: $main-font;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    &:hover {
+      background: darken($sub-font, 10%);
+    }
+  }
+  section#banner {
+    position: relative;
+    .title-box {
+      position: absolute;
+      left: 5rem;
+      .banner-title {
+        width: 500px;
+        height: 70px;
+        background-color: $main-color;
+        border-radius: 10px;
+        margin-left: 10rem;
+        h2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+          color: $main-font;
+          font-family: $font-main;
+          font-size: $font-large;
+        }
+      }
+    }
+    .content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      .list {
+        margin: 13rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        h3 {
+          padding: 10px 30px;
+          border-radius: 20px;
+          background-color: $point-color;
+          color: $main-font;
+          font-size: 1.5rem;
+          font-family: $font-sub;
+          font-weight: bold;
+          width: 100%;
+          white-space: nowrap;
+          text-align: center;
+        }
+        .img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          background-size: cover;
+          background-position: center;
+        }
+        ul {
+          li {
+            line-height: 3rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: $font-sub;
+            color: $sub-font;
+          }
+        }
+      }
+      .list2 {
+        margin: 18rem 3rem 6rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        h3 {
+          padding: 10px 30px;
+          border-radius: 20px;
+          background-color: $point-color;
+          color: $main-font;
+          font-size: 1.5rem;
+          font-family: $font-sub;
+          font-weight: bold;
+          width: 100%;
+          white-space: nowrap;
+          text-align: center;
+        }
+        .img {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          background-size: cover;
+          background-position: center;
+        }
+        ul {
+          li {
+            line-height: 3rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-family: $font-sub;
+            color: $sub-font;
+          }
+        }
+      }
+    }
+  }
+  #card {
+    .title {
+      width: 600px;
+      height: 70px;
+      background-color: $main-color;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      margin: 5rem auto;
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        color: $main-font;
+        font-family: $font-main;
+        font-size: $font-large;
+      }
+    }
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem auto;
+      gap: 5rem;
+      color: $sub-font;
+      .guide {
+        width: 600px;
+        height: 100%;
+        font-family: $font-sub;
+        font-size: 20px;
+        border: 1px dashed $point-color;
+        border-radius: 10px;
+        ul {
+          margin: 2rem;
+          li {
+            line-height: 2.2rem;
+          }
+          .txt {
+            margin-left: 2rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+      .map {
+        border: 1px dashed #f5c1c9;
+        border-radius: 10px;
+        padding: 1.9rem;
+      }
+    }
+  }
+  #support {
+    .title-box {
+      margin-top: 15rem;
+      margin-left: 10rem;
+      .support-title {
+        width: 500px;
+        height: 70px;
+        background-color: $main-color;
+        border-radius: 10px;
+        margin-left: 4rem;
+        h2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80px;
+          color: $main-font;
+          font-family: $font-main;
+          font-size: $font-large;
+        }
+      }
+    }
+    .list {
+      margin: 10rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      div {
+        position: relative;
+        border: 1px dashed $point-color;
+        h2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          position: absolute;
+          top: -50px;
+          left: 25px;
+          width: 250px;
+          height: 90px;
+          padding: 12px 10px 7px 10px;
+          border-radius: 20px;
+          background-color: $point-color;
+          color: $main-font;
+          font-family: $font-main;
+          font-size: 26px;
+        }
+        ul {
+          width: 300px;
+          height: 200px;
+          padding-top: 40px;
+          li {
+            margin: 2rem;
+            font-family: $font-sub;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $sub-font;
+            a {
+              font-family: $font-sub;
+              font-size: 12px;
+              padding: 6px 12px;
+              border: none;
+              border-radius: 20px;
+              background-color: $main-color;
+              color: $main-font;
+              cursor: pointer;
+              transition: all 0.2s;
+              &:hover {
+                background-color: darken($main-color, 10%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+    .notice {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      height: 200px;
+      border: 1px dashed $main-color;
+      color: $sub-font;
+      gap: 1rem;
+      position: relative;
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: -25px;
+        left: 25px;
+        width: 250px;
+        height: 50px;
+        padding: 12px 10px 7px 10px;
+        border-radius: 20px;
+        background-color: $main-color;
+        color: $main-font;
+        font-family: $font-main;
+        font-size: 26px;
+      }
+      ul {
+        font-family: $font-sub;
+        li {
+          margin: 7px;
+
+          border-bottom: 1px dashed $main-color;
+        }
+      }
+    }
+    .sns {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 10px;
+      align-items: center;
+      text-align: center;
+      width: 300px;
+      height: 200px;
+      border: 1px dashed $main-color;
+      color: $sub-font;
+      position: relative;
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: -25px;
+        left: 25px;
+        width: 250px;
+        height: 50px;
+        padding: 12px 10px 7px 10px;
+        border-radius: 20px;
+        background-color: $main-color;
+        color: $main-font;
+        font-family: $font-main;
+        font-size: 26px;
+      }
+      .first {
+        margin-top: 15px;
+        font-family: $font-sub;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin-left: 5px;
+          }
+        }
+      }
+      .secon {
+        font-family: $font-sub;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+      ul {
+        display: flex;
+        gap: 1rem;
+        li {
+          img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid $main-color;
+          }
+          &:hover {
+            filter: grayscale(100%);
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+    .help {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 20px;
+      align-items: center;
+      width: 300px;
+      height: 200px;
+      border: 1px dashed $main-color;
+      color: $sub-font;
+      gap: 1rem;
+      position: relative;
+      h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: -25px;
+        left: 25px;
+        width: 250px;
+        height: 50px;
+        padding: 12px 10px 7px 10px;
+        border-radius: 20px;
+        background-color: $main-color;
+        color: $main-font;
+        font-family: $font-main;
+        font-size: 26px;
+      }
+      ul {
+        li {
+          font-family: $font-sub;
+          margin: 5px;
+        }
+      }
+    }
+  }
+  .copy {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $sub-font;
+  }
+}
