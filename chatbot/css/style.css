@@ -1,0 +1,206 @@
+@charset "utf-8";
+main {
+  width: 412px;
+  height: 927px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #f3deff;
+}
+
+/* header 헤더 영역 */
+#header {
+  width: 100%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  /* display: none; */
+}
+
+#header > h1 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#header > .bg {
+  margin: 0.5rem 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    circle,
+    rgba(184, 106, 229, 1) 0%,
+    rgba(243, 222, 255, 0.5) 70%
+  );
+}
+
+#header > .bg > img {
+  width: 60%;
+}
+
+#header > .start {
+  margin: 2rem auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#header > .start > #start-word {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: 2px dashed #b86ae5;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+button {
+  background-color: #7529a1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+button > i {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#header > p {
+  color: gray;
+  justify-content: center;
+  line-height: 2rem;
+}
+
+/* main 메인 영역 */
+#main {
+  position: relative;
+
+  display: none;
+}
+.head {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  margin: 1.5rem;
+  height: 80px;
+}
+.head > h2 {
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.head > button {
+  grid-column: 1;
+  background-color: #efe6f5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.head > button > i {
+  color: #222;
+}
+
+#in-game {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 1.5rem;
+}
+
+#in-game > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+  margin: 0.5rem;
+}
+
+#in-game > ul > li {
+  display: flex;
+  width: 200px;
+  height: auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+li:nth-child(odd) {
+  justify-content: flex-end;
+  background-color: #e0acff;
+  border-radius: 50px 50px 0 50px;
+}
+li:nth-child(even) {
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border-radius: 50px 50px 50px 0;
+}
+li:nth-child(odd)::after {
+  content: url(../img/user_icon.png);
+  width: 45px;
+  height: 45px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50px 50px;
+  position: absolute;
+  right: -4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+li:nth-child(even)::after {
+  content: url(../img/bot_icon.png);
+  width: 45px;
+  height: 45px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50px 50px;
+  position: absolute;
+  left: -4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 하단 보내기 영역 */
+.send {
+  position: fixed;
+  bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  background-color: #b86ae5;
+  width: 412px;
+  height: 100px;
+  padding: 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+.send > #in-word {
+  width: 70%;
+  height: 50px;
+  text-align: center;
+  border: 2px dashed #b86ae5;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+.mic {
+  background-color: #efe6f5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.mic > i {
+  color: #7529a1;
+  font-size: 1.2rem;
+}

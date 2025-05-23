@@ -1,0 +1,64 @@
+@charset "utf-8";
+@font-face {
+  font-family: "CookieRun-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "CookieRun-Regular";
+  background-color: #e2dce6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+
+header {
+  margin: 3rem auto;
+}
+
+button {
+  /* 모든 브라우저 기본 스타일 제거 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* 테두리·배경·그림자 없애기 */
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer; /* 필요하다면 커서 모양은 살려두기 */
+}
+
+/* Firefox 내부 여백 없애기 */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* WebKit 내부 여백 없애기 */
+button::-webkit-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}

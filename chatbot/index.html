@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>심심이랑 끝말잇기</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+    <div id="header">
+      <h1>
+        심심이랑 <br />
+        끝말잇기
+      </h1>
+      <div class="bg">
+        <img src="./img/bot.png" alt="" />
+      </div>
+      <div class="start">
+        <input
+          type="text"
+          id="start-word"
+          placeholder="시작 단어 입력"
+          autofocus
+        />
+        <button><i class="fa-regular fa-paper-plane"></i></button>
+      </div>
+      <p> 단어 입력 후 전송 및 엔터를 누르면 <br> 게임이 시작됩니다</p>
+    </div>
+    <div id="main">
+      <div class="head">
+        <button><i class="fa-solid fa-arrow-left"></i></button>
+        <h2>심심이랑 놀자!</h2>
+      </div>
+      <nav id ="in-game">
+        <ul>
+          <!-- <li class = "last"> … </li> -->
+        </ul>
+      </nav>
+      <div class="send">
+        <input
+          type="text"
+          id="in-word"
+          placeholder="단어를 입력해주세요"
+          autofocus
+        />
+        <button class="mic"><i class="fa-solid fa-microphone"></i></button>
+        <button class="sendmsg"><i class="fa-regular fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
