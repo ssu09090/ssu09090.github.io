@@ -89,4 +89,4 @@ const imgList = [
     title: "Title-15",
     desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt distinctio",
   },
-];
+]
