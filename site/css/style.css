@@ -196,7 +196,6 @@ section h2:after {
 #contact > .wrapper > .title {
   flex: 1;
   color: #eee;
-  margin: 2rem;
   padding-left: 2rem;
 }
 #contact > .wrapper > .title > * {
