@@ -182,7 +182,7 @@ section h2:after {
   justify-content: center;
   width: 100%;
   background-color: #373737;
-  padding: 0 3rem;
+  padding: 0 5rem 0 1rem;
 }
 #contact > .wrapper > .image {
   flex: 1;
@@ -197,6 +197,7 @@ section h2:after {
   flex: 1;
   color: #eee;
   padding-left: 2rem;
+  padding-bottom: 2rem;
 }
 #contact > .wrapper > .title > * {
   margin: 2rem 0;
