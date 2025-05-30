@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  position: relative;
+}
+.back > .sphere_1,
+.back > .sphere_2 {
+  z-index: -10;
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: #fff3c1;
+}
+.back > .sphere_1 {
+  top: -200px;
+  left: -200px;
+}
+.back > .sphere_2 {
+  bottom: -200px;
+  right: -200px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0 3rem 0;
+  background-color: #c8b7dd;
+  width: 60%;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* section 섹션 슬라이더 영역 */
+.slider {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.slider > .list {
+  display: flex;
+  gap: 7rem;
+}
+.slider > .list > article {
+  flex-shrink: 0;
+  width: 1100px;
+  height: 500px;
+  object-fit: cover;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  line-height: 2rem;
+}
+.slider > .list > article > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.slider > .list > .tech > div > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+
+/* 버튼 영역 */
+.btn-wrap {
+  position: relative;
+}
+.btn-wrap > button {
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f4c542;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.btn-wrap > .back {
+  position: absolute;
+  top: -300px;
+  left: -620px;
+}
+.btn-wrap > .next {
+  position: absolute;
+  top: -300px;
+  left: 580px;
+}
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 120px;
+  gap: 0.5rem;
+}
+.menu-wrap > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #dcd6dc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.menu-wrap > .active {
+  width: 40px;
+  background-color: #c8b7dd;
+}
