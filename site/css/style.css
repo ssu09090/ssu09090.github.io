@@ -109,7 +109,6 @@ section h2:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
 }
 
 #aboutme > .wrapper > .text > button {
@@ -193,7 +192,6 @@ section h2:after {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100%;
 }
 #contact > .wrapper > .title {
   flex: 1;
