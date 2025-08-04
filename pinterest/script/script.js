@@ -4,9 +4,7 @@ const $section = document.querySelector("section");
 
 //메뉴 클릭
 $menu.forEach((elem) => {
-  elem.addEventListener("click", (e) => {
-    e.preventDefault(); //링크 클릭 새로고침 방지
-    const filter = elem.textContent.trim(); //filter를 대문자 그대로 사용
+  elem.addEventListener("click", () => {
     //다른 li에 on클래스가 추가되어있으면 삭제부터
     const $on = document.querySelector("main > ul> li.on");
     if ($on) {
@@ -23,11 +21,11 @@ $menu.forEach((elem) => {
       //   : article.classList.contains("even")
       //   ? "even" : "";
       let text = "";
-      if (article.classList.contains("S/S")) {
+      if (article.classList.contains("odd")) {
         //true이면
-        text = "S/S";
-      } else if (article.classList.contains("F/W")) {
-        text = "F/W";
+        text = "odd";
+      } else if (article.classList.contains("even")) {
+        text = "even";
       } else {
         text = "";
       }
