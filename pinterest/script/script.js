@@ -21,11 +21,11 @@ $menu.forEach((elem) => {
       //   : article.classList.contains("even")
       //   ? "even" : "";
       let text = "";
-      if (article.classList.contains("odd")) {
+      if (article.classList.contains("S/S")) {
         //true이면
-        text = "odd";
-      } else if (article.classList.contains("even")) {
-        text = "even";
+        text = "S/S";
+      } else if (article.classList.contains("F/W")) {
+        text = "F/W";
       } else {
         text = "";
       }
