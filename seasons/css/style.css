@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body{
+  display: block;
+}
+
+/* header 헤더 영역 */
+header {
+  background-image: linear-gradient(90deg, #94bbe9, #eeaeca);
+  margin: 1rem 0;
+  color: #fff;
+}
+header > h1 {
+  padding: 2rem;
+}
+header > .title{
+  display: none;
+}
+header > .title > hr{
+  width: 50%;
+  margin-left: 2rem;
+  outline: none;
+  border: 2px solid #fff;
+}
+header > .title > p{
+  padding: 1rem 2rem;
+}
+/* main 메인 영역 */
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  position: relative;
+}
+main > ul {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-direction: row-reverse;
+  float: right;
+}
+main > ul> li {
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main > ul> li.on > a{
+  background-image: linear-gradient(90deg, #94bbe9,#eeaeca);
+  color: #fff;
+  font-weight: bolder;
+  box-shadow: 0 0 20px rgba(185, 182, 220, 0.5);
+}
+main > ul > li > a {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #888;
+  
+}
+
+/* section 섹션 영역 */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 2rem 0;
+  clear: both;
+}
+
+/* article 아티클 영역 */
+article {
+  flex:1;
+  background-color: #fff;
+  padding: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #555;
+  margin-top: 1rem;
+}
+/* 
+article:nth-child(2) img{
+  aspect-ratio: 1/1.5;
+  object-fit: cover;
+} */
+
+article img {
+  width: 100%;
+}
+article h2{
+  padding: 0.8rem 0;
+  font-size: 0.9rem;
+}
+article p{
+  font-size: 0.7rem;
+  text-align: justify;
+  word-break: keep-all;
+  padding-bottom: 1rem;
+}
+
+
+
+@media screen and (min-width:768px){
+  body{
+    display: block;
+  }
+  main >section{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  article{
+    /* width: 40%; */
+    /* 1: 남은 공간이 있으면 얼마나 늘릴지
+    1 : 공간이 부족하면 얼만큼 줄일지. 
+    250px 기본크기 */
+    flex: 1 1 300px;
+  }
+}
+
+@media screen and (min-width:1024px){
+  body{
+    display: flex;
+    align-items: stretch;
+  }
+  header{
+    margin: 0;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, #eeaeca, #94bbe9);
+  }
+  header > h1 {
+    font-size: 3rem;
+    padding-top: 10rem;
+  }
+  header > .title{
+    display: block;
+  }
+  main{
+    padding: 3rem;
+    margin: 0;
+    margin-left: 350px;
+    margin-bottom: 5rem;
+  }
+  article{
+    flex: 1 1 200px;
+  }
+  main > section{
+    padding-bottom: 5rem;
+  }
